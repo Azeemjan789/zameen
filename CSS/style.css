@@ -1,0 +1,381 @@
+
+#pre-loader{
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+}
+#status{
+    background: url("../img/preloader/25.gif");
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -35px;
+    margin-top: -35px;
+}
+
+/* ===========================================
+                Header
+==============================================*/
+#top-header{
+    background-image: url("../img/header/house.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    
+    
+}
+.header-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header-text h2{
+    font-size: 30px;
+    color: #fff;
+}
+.header-buttons {
+    display: flex;
+    margin: 15px 0;
+    
+}
+.header-buttons .btn-header{
+    color:#fff;
+    background: transparent;
+    border: 1px solid #fff;
+    margin: 0 10px;
+    width: 100px;
+    font-weight: 500;
+}
+.header-buttons .btn-header.active{
+    background: #fff;
+    color: #000;
+}
+.search-filters{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 600px;
+    height: auto;
+    justify-content: space-around;
+    background: rgba(0,0,0,0.7);
+    
+}
+.filter-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.city, .types, .price, .areas{
+    flex-basis: 30%;
+    background: #fff;
+    width: 100%;
+    height: 60px;
+    border-radius: 3px;
+}
+.city select, .types select, .price select, .areas select{
+    border: none;
+    margin: 0;
+}
+.city select:focus{
+    border: none;
+}
+.city p, .types p, .price p, .areas p{
+    margin: 3px;
+    font-size: 12px;
+    color: grey;
+}
+
+.location{
+    flex-basis: 65%;
+    background: #fff;
+    border-radius: 3px;
+}
+.location .location-input{
+    height: 60px;
+}
+
+.filter-2{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between; 
+    margin-bottom: 10px;
+}
+.types{
+   flex-basis: 30%;
+    background: #fff;
+}
+.price{
+    flex-basis: 30%;
+}
+.areas{
+    flex-basis: 30%;
+}
+.btn-find{
+   flex: 1;
+    padding: 10px 0;
+}
+.city, .types, .price, .areas {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===========================================
+                    Last Boxes
+==============================================*/
+#last-search{
+    margin: 50px 0;
+}
+#last-boxes{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    justify-content: space-between;
+}
+.box{
+    flex-basis: 32%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid lightgray;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.left-box{
+    flex-basis: 75%;
+    align-items: center;
+}
+.left-box h6{
+    font-weight: 500;
+    color: dodgerblue;
+}
+.left-box{
+    font-weight: 600;
+    color: darkslategray;
+}
+.right-box{
+    flex-basis: 20%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.right-box span{
+    font-size: 20px;
+    color: dodgerblue;
+   
+}
+
+.last-content-container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+#agencies h1{
+    margin: 0;
+}
+.agency{
+    max-width: 150px;
+    line-height: 150px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.agency img{
+    display: inline-block !important;
+}
+
+
+/*  New Projects */
+.carousel-item{
+   display: flex;
+    flex-direction: row;
+}
+.items{
+    text-align: center;
+    height: 300px;
+    max-width: 300px;
+    border: 1px solid lightgray;
+    flex-basis: 20%;
+}
+.items img{
+    height: 200px;
+    width: 100%;
+}
+.items h6{
+    margin: 20px 0 0 0;
+    color: dodgerblue;
+    font-weight: 600;
+}
+
+/* ===================================
+        Popular Locations 
+====================================== */
+#popular-locations h2{
+    margin-bottom: 30px;
+}
+.location-container{
+    margin: 30px 0;
+    padding: 0 30px;
+}
+.location-container h5{
+    font-weight: 500;
+}
+.popular-content {
+    border-top: 1px solid gray;
+    margin-top: 20px;
+}
+.popular-content h5{
+    margin: 20px 0 10px 0;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.popular-content p{
+    font-size: 12px;
+    margin: 7px 0;
+}
+.popular-content p:hover{
+    text-underline-position: below;
+    cursor: pointer;
+}
+
+/* ===================================
+            Blog
+====================================== */
+
+.card{
+    border: none;
+    padding: 0;
+    margin: 20px auto;
+}
+.card:hover{
+    cursor: pointer;
+}
+.card-body{
+    padding: 0;
+    margin: 0;
+}
+.card-title{
+    color: dodgerblue;
+    margin: 10px 0;
+}
+.card-text{
+    font-size: 14px;
+    margin: 0;
+}
+.card button{
+    border: 1px solid lightgray;
+    margin: 15px 0 0 0;
+    transition: all 300ms linear;
+}
+.card button:hover{
+    background: darkgray;
+}
+
+/* ===================================
+            Contact
+====================================== */
+#contact{
+    background: lightgray;
+    padding: 30px 0;
+}
+#contact h4{
+    font-size: 22px;
+    color: #101010;
+    font-weight: 500;
+    margin: 20px 0;
+}
+#contact span{
+    width: 20px;
+}
+
+.other-contact p{
+    font-size: 16px;
+    margin: 10px 0;
+}
+.other-contact p a{
+    text-decoration: none;
+    color: black;
+}
+.contact-us p:first-child{
+    margin: 0;
+}
+.contact-us p{
+    margin: 20px 0;
+    font-size: 16px;
+
+}
+
+.icon-container{
+    margin: 20px 0;
+}
+.social-media-icons{
+    margin: 50px auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+}
+.social-media-icons span{
+    background: darkgray;
+    padding: 15px 30px 15px 15px;
+    border: 1px solid darkgray;
+    border-radius: 50px;
+    max-width: 70px;
+    max-height: 50px;
+}
+.fb:hover{
+    background: #04246b;
+    color: #fff;
+}
+.tw:hover{
+    background: dodgerblue;
+    color: #fff;
+}
+.linkin:hover{
+    background: #04246b;
+    color: #fff;
+}
+.insta:hover{
+    background: #900C3F;
+    color: #fff;
+}
+.footer-img{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+

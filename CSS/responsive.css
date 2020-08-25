@@ -1,0 +1,42 @@
+
+/* ===========================================
+                Header
+==============================================*/
+@media (max-width: 767px){
+    .header-text h2{
+        font-size: 20px;
+    }
+    .header-buttons .btn-header{
+        width: 70px;
+        font-size: 15px;
+    }
+    .search-filters{
+        width: 500px;
+    }
+    .from-to{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+    }
+    .btn-find{
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+/* ===========================================
+                    Last Boxes
+==============================================*/
+@media (max-width: 768px){
+    .box{
+        flex-basis: 48%;
+    }
+}

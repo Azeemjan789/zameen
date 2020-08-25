@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pak Land</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="CSS/Font-awesome/css/all.css">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.min.css">
+    
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="CSS/owl-carousal/owl.carousel.min.css">
+    <link rel="stylesheet" href="CSS/owl-carousal/owl.theme.default.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+    
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="CSS/responsive.css">
+    
+    
+</head>
+<body>
+    
+    <div id="pre-loader">
+        <div id="status">&nbsp;</div>
+    </div>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg bg-info navbar-dark">
+            <a href="index.html" class="navbar-brand">Pak Land</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-col"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="nav-col">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Add Property</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Homes</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Plots</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Commercials</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Contact Us</a></li>
+                </ul>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Property ID">
+                    <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button> 
+                </form>
+            </div> 
+        </nav>
+        <div id="top-header">
+            <div class="header-content">
+                <div class="header-text">
+                    <h2>Search Properties For Sale in Pakistan</h2>
+                </div>
+                <div class="header-buttons">
+                    <button class="btn-header btn active">Buy</button>
+                    <button class="btn-header btn">Rent</button>
+                    <button class="btn-header btn">Wanted</button>
+                    <button class="btn-header btn">Projects</button>
+                </div>
+                <div class="search-filters">
+                    <div class="filter-1">
+                        <div class="city">
+                           <p>City</p>
+                            <div>
+                                <select name="cities" id="cities">
+                                <option value="">Lahore</option>
+                                <option value="">Karachi</option>
+                                <option value="">Peshawar</option>
+                                <option value="">Quetta</option>
+                                <option value="">Multan</option>
+                                <option value="">Islamabad</option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="location">
+                            <input class="form-control location-input" type="search" placeholder="Property ID">
+                        </div>
+                    </div>
+                    <div class="filter-2">
+                        <div class="types">
+                            <p>Types</p>
+                            <select name="cities" id="cities">
+                                <option value="">Homes</option>
+                                <option value="">Plots</option>
+                                <option value="">Commercials</option>
+                            </select>
+                        </div>
+                        <div class="price">
+                            <p>Price</p>
+                            <div class="from-to">
+                                <select name="from" id="price">
+                                    <option value="">0</option>
+                                    <option value="">50000</option>
+                                    <option value="">100000</option>
+                                    <option value="">200000</option>
+                                    <option value="">300000</option>
+                                </select>
+                                <select name="to" id="prices">
+                                    <option value="">0</option>
+                                    <option value="">50000</option>
+                                    <option value="">100000</option>
+                                    <option value="">200000</option>
+                                    <option value="">300000</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="areas">
+                            <p>Area</p>
+                            <div class="from-to">
+                                <select name="area" id="area">
+                                    <option value="">0</option>
+                                    <option value="">50000</option>
+                                    <option value="">100000</option>
+                                    <option value="">200000</option>
+                                    <option value="">300000</option>
+                                </select>
+                                <select name="to" id="areas">
+                                    <option value="">0</option>
+                                    <option value="">50000</option>
+                                    <option value="">100000</option>
+                                    <option value="">200000</option>
+                                    <option value="">300000</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-info btn-block btn-find">FIND</button>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    
+    <!-- Last Searches -->
+    <section id="last-search">
+        <div class="container">
+           <div class="last-content-container">
+                <div id="last-content">
+                    <div id="last-title">
+                        <h2 class="text-center"><span class="fa fa-search"></span> Your last searches</h2>
+                    </div>
+                    <div id="last-boxes">
+                        <div class="box">
+                            <div class="left-box">
+                                <h6>Homes for sale in karachi</h6>
+                                <p>All homes</p>
+                            </div>
+                            <div class="right-box">
+                                <span class="fas fa-chevron-right"></span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="left-box">
+                                <h6>Homes for sale in Lahore</h6>
+                                <p>All homes</p>
+                            </div>
+                             <div class="right-box">
+                                <span class="fas fa-chevron-right"></span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="left-box">
+                                <h6>Offices for rent in Lahore</h6>
+                                <p>All offices</p>
+                            </div>
+                             <div class="right-box">
+                                <span class="fas fa-chevron-right"></span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="left-box">
+                                <h6>Homes for sale in G-9</h6>
+                                <p>All homes</p>
+                            </div>
+                             <div class="right-box">
+                                <span class="fas fa-chevron-right"></span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="left-box">
+                                <h6>Homes for rent in karachi</h6>
+                                <p>All homes</p>
+                            </div>
+                             <div class="right-box">
+                                <span class="fas fa-chevron-right"></span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="left-box">
+                                <h6>Homes for rent in Lahore</h6>
+                                <p>All homes</p>
+                            </div>
+                             <div class="right-box">
+                                <span class="fas fa-chevron-right"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="agencies">
+                    <h1 class="text-center">Titanum Agencies</h1>
+                    <div class="owl-carousel owl-theme" id="agency-container">
+                        <div class="agency">
+                            <img src="img/Agencies/1.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="agency">
+                            <img src="img/Agencies/10.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="agency">
+                            <img src="img/Agencies/2.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="agency">
+                            <img src="img/Agencies/3.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="agency">
+                            <img src="img/Agencies/4.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="agency">
+                            <img src="img/Agencies/5.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="agency">
+                            <img src="img/Agencies/6.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="agency">
+                            <img src="img/Agencies/7.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="agency">
+                            <img src="img/Agencies/9.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+           </div>
+           <!-- Discover New Projects --> 
+        </div>
+    </section>
+    <!-- Last Seacrhes End -->
+
+    
+    <!-- Popular Locations -->
+    <section id="popuplar-locations">
+        <h2 class="text-center">Popular Locations</h2>
+        <div class="container">
+            <div class="location-container">
+                <h5>Popular Cities to Buy Properties</h5>
+                <div class="popular-content">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12 col-12">
+                            <h5>Houses</h5>
+                            <p>Houses Sale in Lahore (24,102)</p>
+                            <p>Houses Sale in Karachi (24,122)</p>
+                            <p>Houses Sale in Mulatn (2,102)</p>
+                            <p>Houses Sale in Quetta (24,332)</p>
+                            <p>Houses Sale in Islamabad (34,102)</p>
+                            <p>Houses Sale in Sargodha (210,102)</p>
+                            <p>Houses Sale in Mianwali (28,102)</p>
+                            <p>Houses Sale in Bhakkar (22,102)</p>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-12">
+                            <h5>Commercial Plots</h5>
+                            <p>Commercial Plots Sale in Lahore (54,102)</p>
+                            <p>Commercial Plots Sale in Karachi (44,102)</p>
+                            <p>Commercial Plots Sale in Mulatn (44,377)</p>
+                            <p>Commercial Plots Sale in Quetta (77,162)</p>
+                            <p>Commercial Plots Sale in Islamabad (66,142)</p>
+                            <p>Commercial Plots Sale in Sargodha (245,152)</p>
+                            <p>Commercial Plots Sale in Mianwali (32,12)</p>
+                            <p>Commercial Plots Sale in Bhakkar (56,102)</p>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-12">
+                            <h5>Flats and Apartments (33,377)</h5>
+                            <p>Flats Sale in Lahore (66,477)</p>
+                            <p>Flats Sale in Karachi (55,347)</p>
+                            <p>Flats Sale in Mulatn (93,377)</p>
+                            <p>Flats Sale in Quetta (30,377)</p>
+                            <p>Flats Sale in Islamabad (70,377)</p>
+                            <p>Flats Sale in Sargodha (31,377)</p>
+                            <p>Flats Sale in Mianwali (1,377)</p>
+                            <p>Flats Sale in Bhakkar (90,377)</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <!-- Most popullar location for home -->
+            <div class="location-container">
+                <h5>Popular Cities to Buy Properties</h5>
+                <div class="popular-content">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12 col-12">
+                            <h5>Lahore</h5>
+                            <p>Houses Sale in Lahore (24,102)</p>
+                            <p>Houses Sale in Karachi (24,122)</p>
+                            <p>Houses Sale in Mulatn (2,102)</p>
+                            <p>Houses Sale in Quetta (24,332)</p>
+                            <p>Houses Sale in Islamabad (34,102)</p>
+                            <p>Houses Sale in Sargodha (210,102)</p>
+                            <p>Houses Sale in Mianwali (28,102)</p>
+                            <p>Houses Sale in Bhakkar (22,102)</p>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-12">
+                            <h5>Karachi</h5>
+                            <p>Commercial Plots Sale in Lahore (54,102)</p>
+                            <p>Commercial Plots Sale in Karachi (44,102)</p>
+                            <p>Commercial Plots Sale in Mulatn (44,377)</p>
+                            <p>Commercial Plots Sale in Quetta (77,162)</p>
+                            <p>Commercial Plots Sale in Islamabad (66,142)</p>
+                            <p>Commercial Plots Sale in Sargodha (245,152)</p>
+                            <p>Commercial Plots Sale in Mianwali (32,12)</p>
+                            <p>Commercial Plots Sale in Bhakkar (56,102)</p>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-12">
+                            <h5>Islamabad</h5>
+                            <p>Flats Sale in Lahore (66,477)</p>
+                            <p>Flats Sale in Karachi (55,347)</p>
+                            <p>Flats Sale in Mulatn (93,377)</p>
+                            <p>Flats Sale in Quetta (30,377)</p>
+                            <p>Flats Sale in Islamabad (70,377)</p>
+                            <p>Flats Sale in Sargodha (31,377)</p>
+                            <p>Flats Sale in Mianwali (1,377)</p>
+                            <p>Flats Sale in Bhakkar (90,377)</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <!-- Popular cities for plot -->
+            <div class="location-container">
+                <h5>Popular Cities to Buy Properties</h5>
+                <div class="popular-content">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12 col-12">
+                            <h5>Lahore</h5>
+                            <p>Houses Sale in Lahore (24,102)</p>
+                            <p>Houses Sale in Karachi (24,122)</p>
+                            <p>Houses Sale in Mulatn (2,102)</p>
+                            <p>Houses Sale in Quetta (24,332)</p>
+                            <p>Houses Sale in Islamabad (34,102)</p>
+                            <p>Houses Sale in Sargodha (210,102)</p>
+                            <p>Houses Sale in Mianwali (28,102)</p>
+                            <p>Houses Sale in Bhakkar (22,102)</p>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-12">
+                            <h5>Peshawar</h5>
+                            <p>Commercial Plots Sale in Lahore (54,102)</p>
+                            <p>Commercial Plots Sale in Karachi (44,102)</p>
+                            <p>Commercial Plots Sale in Mulatn (44,377)</p>
+                            <p>Commercial Plots Sale in Quetta (77,162)</p>
+                            <p>Commercial Plots Sale in Islamabad (66,142)</p>
+                            <p>Commercial Plots Sale in Sargodha (245,152)</p>
+                            <p>Commercial Plots Sale in Mianwali (32,12)</p>
+                            <p>Commercial Plots Sale in Bhakkar (56,102)</p>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-12">
+                            <h5>Rawalpindi/Islamabad</h5>
+                            <p>Flats Sale in Lahore (66,477)</p>
+                            <p>Flats Sale in Karachi (55,347)</p>
+                            <p>Flats Sale in Mulatn (93,377)</p>
+                            <p>Flats Sale in Quetta (30,377)</p>
+                            <p>Flats Sale in Islamabad (70,377)</p>
+                            <p>Flats Sale in Sargodha (31,377)</p>
+                            <p>Flats Sale in Mianwali (1,377)</p>
+                            <p>Flats Sale in Bhakkar (90,377)</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Popular Locations ends -->
+
+    <!-- Blog -->
+    <section id="blog">
+        <h1 class="text-center">Recent from the Blog</h1>
+        <div class="container">
+            <div id="blog-container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 col-sm-6 col-12">
+                        <div class="card">
+                            <img class="card-img-top" src="img/blog/1.jpg" alt="blog-image-1">
+                            <div class="card-body">
+                                <h6 class="card-title">The best storage hacks and Tips for Wardrobees and Designing Rooms</h6>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, temporibus, doloribus! Accusantium libero enim maiores earum id.</p>
+                            </div>
+                            <button class="btn">READ MORE</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-sm-6 col-12">
+                        <div class="card">
+                            <img class="card-img-top" src="img/blog/1.jpg" alt="blog-image-1">
+                            <div class="card-body">
+                                <h6 class="card-title">The best storage hacks and Tips for Wardrobees and Designing Rooms</h6>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, temporibus, doloribus! Accusantium libero enim maiores earum id.</p>
+                            </div>
+                            <button class="btn">READ MORE</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-sm-6 col-12">
+                        <div class="card" >
+                            <img class="card-img-top" src="img/blog/1.jpg" alt="blog-image-1">
+                            <div class="card-body">
+                                <h6 class="card-title">The best storage hacks and Tips for Wardrobees and Designing Rooms</h6>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, temporibus, doloribus! Accusantium libero enim maiores earum id.</p>
+                            </div>
+                            <button class="btn">READ MORE</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-sm-6 col-12">
+                        <div class="card" >
+                            <img class="card-img-top" src="img/blog/1.jpg" alt="blog-image-1">
+                            <div class="card-body">
+                                <h6 class="card-title">The best storage hacks and Tips for Wardrobees and Designing Rooms</h6>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, temporibus, doloribus! Accusantium libero enim maiores earum id.</p>
+                            </div>
+                            <button class="btn">READ MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog End -->
+
+    <!-- Contact -->
+    <section id="footer">
+       <div id="contact">
+           <div class="container">
+               <div class="row">
+                   <div class="col-md-3">
+                       <h4>Pak Land</h4>
+                       <div class="contact-us">
+                           <p><span class="fa fa-map-marker"></span>   Pearl One 94/Bi, Barkat Market near Shahi Mall, Lahore, Pakistan</p>
+                           <p><span class="fa fa-phone"></span>  0800-PAKLAND(93939) (+92)427625526</p>
+                           <p><span class="fa fa-envelope"></span>  Email Us</p>
+                       </div>
+                   </div>
+                   <div class="col-md-3">
+                       <h4>Company</h4>
+                       <div class="other-contact">
+                           <p><a href="#">About Us</a></p>
+                           <p><a href="#">Contact Us</a></p>
+                           <p><a href="#">Jobs</a></p>
+                           <p><a href="#">Help & Support</a></p>
+                           <p><a href="#">Advertise on Pak Land</a></p>
+                           <p><a href="#">Terms of Use</a></p>
+                       </div>
+                   </div>
+                   <div class="col-md-3">
+                       <h4>Connect</h4>
+                       <div class="other-contact">
+                           <p><a href="#">Blog</a></p>
+                           <p><a href="#">News</a></p>
+                           <p><a href="#">Forum</a></p>
+                           <p><a href="#">Expo</a></p>
+                           <p><a href="#">Real Estate Agents</a></p>
+                           <p><a href="#">Add Property</a></p>
+                       </div>
+                   </div>
+                   <div class="col-md-3">
+                       <div class="icon-container">
+                           <div class="social-media-icons">
+                               <span class="fab fa-facebook-f fb"></span>
+                               <span class="fab fa-twitter tw"></span>
+                               <span class="fab fa-linkedin-in linkin"></span>
+                               <span class="fab fa-instagram insta"></span>
+                           </div>
+                           
+                           <div class="container">
+                               <div id="footer-images">
+                                   <div class="row" >
+                                       <div class="col-md-6 col-sm-6 col-6">
+                                           <img src="img/footer/footer-info-img.png" class="img-fluid footer-img">
+                                       </div>
+                                       <div class="col-md-6 col-sm-6 col-6">
+                                           <img src="img/footer/footer-info-img-2.png" class="img-fluid footer-img">
+                                       </div>
+                                   </div>
+                               </div>
+                               
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+    </section>
+    <!-- Contact End -->
+
+    
+    
+    <!-- JQuery -->
+    <script src="js/jquery.min.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    
+    <!-- Owl Carousel -->  
+    <script src="js/owl-carousel/owl.carousel.min.js"></script>
+    
+    <!-- Script JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
